@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Boxicons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bella Mania</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img title="logo" src="./assets/logo.png">
+                <div class="logo_name">Bella Mania</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="links-name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links-name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-folder'></i>
+                    <span class="links-name">File Manager</span>
+                </a>
+                <span class="tooltip">File Manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links-name">Order</span>
+                </a>
+                <span class="tooltip">Order</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links-name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links-name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                   <img src="./assets/logo.png" alt="Profile Pic">
+                    <div class="name-job">
+                        <div class="name">Bella Mania</div>
+                        <div class="job">Admin Store</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log-out"></i>
+            </div>
+        </div>
+  
+    </div>
+    <div class="home-content">
+        <div class="text">Home Content</div>
+
+    </div>
+    <script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+    
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    
+    
+</body>
+
+
+
+
+
+</html>
